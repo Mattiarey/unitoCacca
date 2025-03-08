@@ -1,0 +1,102 @@
+/*=================Fonts=================*/
+/*.inter-<uniquifier> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+
+/*=================Altre cose=================*/
+*{
+    font-family: 'Inter', sans-serif;
+    font-weight: 390;
+    color: #E0E0E0;
+}
+body{
+    background-color: #121212;
+    height: 98vh;
+    width: auto;
+}
+.sfondo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/logo.png);
+    background-position: center;
+}
+.contenitore{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.icona{
+    flex: 1 1 calc(100% / 6 - 20px); 
+    min-width: 110px;
+    max-width: 300px; 
+    height: 260px;
+    margin: 0 20px; 
+}
+.btn{
+    width: 100%;
+    background-color: #1E1E1E;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 4%;
+}
+.btn:active{
+    background-color: #00A8E8;
+}
+
+#id_orari{
+    background-image: url(../img/timetable.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#id_moodle{
+    background-image: url(../img/Moodle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#id_unito{
+    background-image: url(../img/logoUnito.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#id_dip{
+    background-image: url(../img/logo.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#id_esami{
+    background-image: url(../img/test.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#id_corsi{
+    background-image: url(../img/online-course.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+h5{
+    background-color: #252525;
+    padding: 0.3em;
+    border-radius: 4px;
+    color: #B0B0B0;
+}
+::selection{
+    background-color: #8A2BE2;
+}

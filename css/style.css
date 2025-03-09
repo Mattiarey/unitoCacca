@@ -12,6 +12,9 @@
     font-weight: 390;
     color: #E0E0E0;
 }
+.titolo{
+    font-size: larger;
+}
 body{
     background-color: #121212;
     height: 98vh;
@@ -53,7 +56,7 @@ body{
     border-radius: 4%;
     cursor: pointer;
 }
-.btn:active{
+.btn:hover{
     background-color: #00A8E8;
 }
 
@@ -105,7 +108,7 @@ h5{
 
 @media (max-width: 600px) {
     .titolo h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .contenitore {

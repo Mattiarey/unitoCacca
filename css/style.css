@@ -105,6 +105,59 @@ h5{
 ::selection{
     background-color: #8A2BE2;
 }
+/* pagina dei corsi */
+.corso{
+    background-color: #1A1A1A;
+    width: 80vw;
+    height: 60px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnRm:hover{
+    background-color: #4ab8e4;
+    animation: glow 1s infinite alternate ease-in-out;
+}
+.corso:hover{
+    background-color: #00A8E8; 
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+#nomeCorso{
+    margin-left: 4vw;
+    font-size: larger;
+}
+.btnRm{
+    margin-right: 4vw;
+    background-color: #252525;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+.aggiungi{
+    width: 80vw;
+    height: 60px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    color: #A3AAB5;
+}
+#id_aggiungi{
+    margin-right: 1vh;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 @media (max-width: 600px) {
     .titolo h1 {
@@ -125,3 +178,14 @@ h5{
         height: auto;
     }
 }
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 255, 255, 0.3), 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(0, 255, 255, 0.3), 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+  }

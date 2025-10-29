@@ -33,7 +33,7 @@ function toccaOra() {
     this.document.getElementById("loghinoLoghetto").src = "../img/timetable.png";
 }
 function toccaMoodle() {
-    this.document.getElementById("loghinoLoghetto").src = "../img/moodle.png";
+    this.document.getElementById("loghinoLoghetto").src = "../img/Moodle.png";
 }
 function apriOrari() {
     orari_url = this.localStorage.getItem("orari");

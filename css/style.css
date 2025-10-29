@@ -134,7 +134,43 @@ h5 {
 ::selection {
     background-color: #8A2BE2;
 }
-
+.contenitore2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loghino {
+    height: 50vh;  
+    width: auto;  
+    display: flex;
+    
+    flex-wrap: nowrap;
+    align-items: center;    
+}
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="button"]{
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="button"]:hover {
+    background-color: #00A8E8;
+}
+.buco {
+    width: 100px; /* Larghezza del buco */
+    height: auto; /* Altezza automatica */
+}
 @media (max-width: 600px) {
     .titolo h1 {
         font-size: 2rem;

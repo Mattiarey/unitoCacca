@@ -29,7 +29,12 @@ function salvaNuovoLink() {
 }
 
 
-
+function toccaOra() {
+    this.document.getElementById("loghinoLoghetto").src = "../img/timetable.png";
+}
+function toccaMoodle() {
+    this.document.getElementById("loghinoLoghetto").src = "../img/moodle.png";
+}
 function apriOrari() {
     orari_url = this.localStorage.getItem("orari");
     window.open(orari_url, '_blank', 'noopener,noreferrer');

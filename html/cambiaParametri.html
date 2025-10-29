@@ -20,21 +20,25 @@
     <div class="sfondo">
 
         <div class="cambia_anno">
-            <h3 onclick="window.open('../main.html')">Ritorna</h3>
+            <h3 onclick="window.open('../main.html', '_self')">Ritorna</h3>
         </div>
         <div class="titolo">
             <h1>Cambia anno</h1>
         </div>
-        <div class="contenitore">
+        <div class="contenitore2">
             <div class="input">
                 <h3>Cosa vuoi cambiare?</h3>
-                <input type="radio" id="orario_choose" name="choose" value="orario">
+                <input type="radio" id="orario_choose" name="choose" value="orario" checked onclick="toccaOra()">
                 <label for="orario_choose">Link orari</label><br>
-                <input type="radio" id="moodle_choose" name="choose" value="moodle">
+                <input type="radio" id="moodle_choose" name="choose" value="moodle" onclick="toccaMoodle()">
                 <label for="moodle_choose">Link moodle</label><br><br>
                 <h3>Nuovo link:</h3>
                 <input type="text" id="new_link" name="new_link" placeholder="Inserisci il nuovo link">
                 <input type="button" value="Salva" onclick="salvaNuovoLink()">
+            </div>
+            <div class="buco"></div>
+            <div class="loghino">
+                <img src="../img/timetable.png" alt="Logo UniTO" id="loghinoLoghetto">
             </div>
         </div>
 </body>

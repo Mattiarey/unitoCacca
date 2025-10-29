@@ -11,12 +11,16 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/logoUnito.png">
+    <script src="./script/cambiaLink.js" defer></script>
     <title>Cose unito</title>
     <!--Mi rendo conto che questi window.open siano la cosa meno sicura al mondo, appena saprò come renderli migliori, lo farò-->
 </head>
 
 <body>
     <div class="sfondo">
+        <div class="cambia_anno">
+            <h3 onclick="window.open('./html/cambiaParametri.html')">Cambia link</h3>
+        </div>
         <div class="titolo">
             <h1>Cose di UniTO</h1>
         </div>
@@ -24,7 +28,7 @@
             <div class="icona">
                 <!--Orari-->
                 <div class="btn" id="id_orari"
-                    onclick="window.open('https://unito.prod.up.cineca.it/calendarioPubblico/linkCalendarioId=613b951ac10c8a0017da45cf', '_blank', 'noopener,noreferrer')">
+                    onclick="apriOrari()">
                     <div class="testo">
                         <h5>ORARI</h5>
                     </div>
@@ -33,7 +37,7 @@
             <div class="icona">
                 <!--Moodle-->
                 <div class="btn" id="id_moodle"
-                    onclick="window.open('https://informatica.i-learn.unito.it/course/index.php?categoryid=471', '_blank', 'noopener,noreferrer')">
+                    onclick="apriMoodle()">
                     <h5>MOODLE</h5>
                 </div>
             </div>
@@ -60,12 +64,18 @@
             </div>
             <div class="icona">
                 <!--Qui portare ad un'altra pagina per scegliere il corso, in modo migliore, perché il sito di unito fa mega cagare-->
-                <div class="btn" id="id_corsi" onclick="window.open('./html/corsi.html', '_blank', 'noopener,noreferrer')">
+                <div class="btn" id="id_corsi"
+                    onclick="window.open('./html/corsi.html', '_blank', 'noopener,noreferrer')">
                     <h5>CORSI</h5>
                 </div>
             </div>
+            <div class="icona">
+                <div class="btn" id="id_gitlab"
+                    onclick="window.open('https://gitlab2.educ.di.unito.it/', '_blank', 'noopener,noreferrer')">
+                    <h5>GITLAB</h5>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>

@@ -7,20 +7,23 @@
   }*/
 
 /*=================Altre cose=================*/
-*{
+* {
     font-family: 'Inter', sans-serif;
     font-weight: 390;
     color: #E0E0E0;
 }
-.titolo{
+
+.titolo {
     font-size: larger;
 }
-body{
+
+body {
     background-color: #121212;
     height: 98vh;
     width: auto;
 }
-.sfondo{
+
+.sfondo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,23 +32,26 @@ body{
     width: 100%;
     background-image: url(../img/logo.png);
     background-position: center;
-    
+
 }
-.contenitore{
+
+.contenitore {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     width: 90%;
     max-width: 600px;
 }
-.icona{
-    flex: 1 1 calc(100% / 6 - 20px); 
+
+.icona {
+    flex: 1 1 calc(100% / 6 - 20px);
     min-width: 110px;
-    max-width: 300px; 
+    max-width: 300px;
     height: 200px;
-    margin: 0 20px; 
+    margin: 0 20px;
 }
-.btn{
+
+.btn {
     width: 100%;
     background-color: #1E1E1E;
     height: 100%;
@@ -56,53 +62,76 @@ body{
     border-radius: 4%;
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #00A8E8;
 }
 
-#id_orari{
+#id_orari {
     background-image: url(../img/timetable.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-#id_moodle{
+
+#id_moodle {
     background-image: url(../img/Moodle.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-#id_unito{
+
+#id_unito {
     background-image: url(../img/logoUnito.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-#id_dip{
+
+#id_dip {
     background-image: url(../img/logo.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-#id_esami{
+
+#id_esami {
     background-image: url(../img/test.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-#id_corsi{
+
+#id_corsi {
     background-image: url(../img/online-course.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-h5{
+
+#id_gitlab {
+    background-image: url(../img/gitlab.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h5 {
     background-color: #252525;
     padding: 0.3em;
     border-radius: 4px;
     color: #B0B0B0;
 }
-::selection{
+
+.cambia_anno {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+::selection {
     background-color: #8A2BE2;
 }
 
@@ -112,7 +141,8 @@ h5{
     }
 
     .contenitore {
-        grid-template-columns: 1fr; /* Un solo pulsante per riga */
+        grid-template-columns: 1fr;
+        /* Un solo pulsante per riga */
         gap: 30px;
     }
 
@@ -120,7 +150,8 @@ h5{
         padding: 12px;
         font-size: 1rem;
     }
-    .sfondo{
+
+    .sfondo {
         justify-content: flex-start;
         height: auto;
     }

@@ -4,10 +4,10 @@ let moodle_url = "";
 
 window.onload = function () {
     if (this.localStorage.getItem("orari") == null) {
-        this.localStorage.setItem("orari", "https://http.cat/100");
+        this.localStorage.setItem("orari", "https://laurea.informatica.unito.it/do/home.pl/View?doc=Orario_lezioni.html");
     }
     if (this.localStorage.getItem("moodle") == null) {
-        this.localStorage.setItem("moodle", "https://http.cat/100");
+        this.localStorage.setItem("moodle", "https://informatica.i-learn.unito.it/");
     }
 }
 
@@ -37,9 +37,9 @@ function toccaMoodle() {
 }
 function apriOrari() {
     orari_url = this.localStorage.getItem("orari");
-    window.open(orari_url, '_blank', 'noopener,noreferrer');
+    window.open(orari_url, '_self', 'noopener,noreferrer');
 }
 function apriMoodle() {
     moodle_url = this.localStorage.getItem("moodle");
-    window.open(moodle_url, '_blank', 'noopener,noreferrer');
+    window.open(moodle_url, '_self', 'noopener,noreferrer');
 }

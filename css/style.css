@@ -116,6 +116,20 @@ body {
     background-size: contain;
 }
 
+#id_mail {
+    background-image: url(../img/mail.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#id_telegram {
+    background-image: url(../img/Telegram.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 h5 {
     background-color: #252525;
     padding: 0.3em;
@@ -203,7 +217,7 @@ input[type="button"]:hover {
     .contenitore2 {
         flex-direction: column;
         text-align: center;
-        
+
     }
 
     #loghinoLoghetto {
@@ -211,7 +225,8 @@ input[type="button"]:hover {
         width: 300px;
         margin-top: 20px;
     }
-    .loghino{
+
+    .loghino {
         align-items: flex-start;
     }
 }
